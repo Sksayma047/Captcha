@@ -1,5 +1,5 @@
 body{
-    background-image: url('back.jpeg');
+    background-image: url(./back.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -29,7 +29,7 @@ body{
 
 .registration__image
 {
-    background-image: url('Krikorian-Theatres.jpg');
+    background-image: url(./Krikorian-Theatres.webp);
     background-size: cover;
     background-position: center;
     display: none;
@@ -139,11 +139,13 @@ input[type="confirmpassword"]
 
 #captchaCanvas {
     border: 1px solid #ccc;
-    width: 150px;
-    height: 80px;
-    padding: 12px;
+    width: 6vw;
+    height: 4vw;
+    padding: 2vw;
+    margin-bottom: 2vw;
     border-radius: 4px;
-    margin-right: 70px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
 }
 
