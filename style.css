@@ -1,0 +1,165 @@
+body{
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.registration{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: rgba(0,0,0,.3);
+    width: 70%;
+    
+    box-shadow: 5px 5px 10px #545454 ;
+    border-radius: 10px;
+
+}
+
+.registration__container{
+    display:flex;
+    min-height: 600px;
+    color: rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.registration__image
+{
+    background-image: url('Krikorian-Theatres.jpg');
+    background-size: cover;
+    background-position: center;
+    display: none;
+    min-height: 610px;
+    flex-basis: 40%;
+    position: relative;
+    
+
+}
+@media (min-width:768px) {
+    .registration__image {
+        display: block;
+    }
+    
+}
+.registration__image .title{
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top:80px;
+    left: 20px;
+}
+
+
+.registration__image .site {
+    color:#fff;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size:14px;
+}
+
+.registration__image .overlay{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#registration__form{
+    padding:60px 15px;
+    color: #212529;
+    font-size: 20px;
+    
+}
+@media (min-width: 768px){
+    .registration__form {
+    padding: 60px;
+    flex-basis: 60%;
+}
+}
+
+
+#registration__form .title{
+    color:#fff;
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 30px;
+}
+#registration__form .title::before{
+    content:'';
+    border-bottom: 3px solid#212529;
+    position: absolute;
+    bottom: -8px;
+    width:20%;
+    border-radius: 5px;
+
+}
+#registration__form .form-label,
+#registration__form  .form-check-label{
+    color:#fff;
+}
+
+
+
+
+
+.form-input {
+    margin-bottom: 20px;
+    
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"]
+input[type="firstname"]
+input[type="lastname"]
+input[type="email"]
+input[type="confirmpassword"]
+ {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#captchaCanvas {
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 80px;
+    padding: 12px;
+    border-radius: 4px;
+    margin-right: 70px;
+
+}
+
+button #loginButton{
+    padding: 12px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9834b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #50225e;
+}
